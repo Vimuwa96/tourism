@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.upper-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.upper-left,
+.upper-right {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.social {
+  list-style: none;
+  display: flex;
+}
+
+.social-link {
+  padding: 5px 5px;
+}
+
+.navigation-bar {
+  border-top: 2px solid orange;
+}
+
+.navigation-bar-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-wrapper {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.navigation-bar-ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.navigation-bar-ul li a:hover {
+  text-decoration: none;
+  color: rgb(255, 155, 6);
+  font-weight: 500;
+}
+
+.navigation-bar-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-bar-ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.navigation-bar-ul a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: white;
+  background-color: #fa9107;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.welcome {
+  padding: 25px 0 75px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcome-msg h1,
+.welcome-msg h2 {
+  margin: 0;
+}
+
+.welcome-description {
+  margin-top: 20px;
+}
+
+
+.welcome-msg h2 {
+  font-size: 50px;
+  font-family: "Poppins", serif;
+}
+
+.welcome-msg h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  line-height: 85px;
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+
+.para-italic {
+  font-style: italic;
+  font-weight: 600;
+  color: #000;
+}
+
+.welcome-description p {
+  font-size: 20px;
+  color: rgb(56, 55, 55);
+  line-height: 30px;
+  text-align: justify;
+}
+
+p a {
+  color: rgb(12, 15, 189);
+  text-decoration: none;
+}
+
+p .para {
+  color: #000;
+}
+
+.left-image {
+  position: absolute;
+  z-index: -1;
+  left: -100px;
+  opacity: 50%;
+}
+
+
+.about-us-link{
+  padding-top: 35px;
+}
+
+.about-us-link a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: orange;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.destination-wrapper{
+  padding-bottom: 25px;
+}
+/* Cards */
+.destination-card{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: "Poppins", serif;
+  transition: 0.5s ease-in;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.5s ease;
+
+}
+
+
+.destination-card-image img{
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  overflow: hidden;
+}
+
+.card-description{
+  padding: 18px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.card-description p{
+  text-align: justify;
+}
+.card-name p{
+  font-family: "Yellowtail", serif;
+  font-size: 65px;
+  color: white;
+
+}
+.card-name{
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  margin-top: -100px;
+
+  transition: 0.5s;
+  display: none;
+  
+}
+
+.destination-card:hover .card-name{
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.destination-card:hover .destination-card-image{
+  scale: 1.1;
+  transition: 0.5s ease;
+}
+
+.read-more{
+  padding: 0 0 25px 20px;
+}
+
+.read-more a{
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: #fa9107;
+}
+
+.culture-para{
+  line-height: 25px;
+  text-align: justify;
+  padding-bottom: 100px;
+}
+
+.locations{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.locations li{
+  padding: 5px;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Creates six equal columns */
+  gap: 10px; /* Adds space between the items */
+  margin: 20px;
+}
+
+.image-item {
+  width: 100%;
+  height: auto; /* Ensures images maintain their aspect ratio */
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block; /* Removes inline gaps from images */
+  object-fit: cover; /* Ensures images fill their container while maintaining aspect ratio */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+}
