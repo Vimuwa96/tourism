@@ -355,3 +355,138 @@ p .para {
   border-radius: 5px; /* Optional: Adds rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
 }
+
+.destination-wrapper-section{
+  padding-bottom: 75px;
+}
+
+.footer{
+  background-color: #000000;
+}
+
+.footer-logo{
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  background-color: #020202; /* Dark background */
+  color: #fff; /* White text */
+  padding: 40px 20px; /* Padding around the footer */
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for the content */
+  gap: 20px; /* Space between columns */
+  align-items: start; /* Align items at the top */
+}
+
+.footer-logo {
+  grid-column: span 2; /* Logo spans both columns */
+  text-align: center; /* Center-align the logo */
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo {
+  max-width: 150px; /* Logo size */
+  margin-bottom: 10px;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff9101; /* Highlight color for headings */
+}
+
+.footer-column p,
+.footer-column ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li::before {
+  content: "•"; /* Add a bullet */
+  color: #f0db4f; /* Highlight color for bullet */
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    text-align: center; /* Center-align content */
+  }
+
+  .footer-column {
+    margin-bottom: 20px; /* Add spacing between columns */
+  }
+}
+
+
+.designer-note{
+  padding-top: 15px;
+  text-align: center;
+}
+
+.designer-note p {
+  font-size: small;
+}
+
+.content{
+  padding: 35px 0 35px 0;
+}
+
+.content-paragraph{
+padding-top: 15px;
+text-align: justify;
+line-height: 25px;
+}
+
+.main-para::first-letter {
+  font-size: 3rem; /* Larger size for the first letter */
+  font-weight: bold; /* Make it bold */
+  color: #333; /* Set the color */
+  float: left; /* Align the letter to the left */
+  line-height: 1; /* Adjust line height for alignment */
+  margin-right: 5px; /* Add space between the letter and text */
+}
+
+.king{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.page-navigation-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  font-size: smaller;
+}
+
+.previos , .next{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  text-align: center;
+  display: flex;
+  align-items: baseline;
+}
