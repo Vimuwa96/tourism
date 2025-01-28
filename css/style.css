@@ -490,3 +490,26 @@ line-height: 25px;
   display: flex;
   align-items: baseline;
 }
+
+.form-class{
+  padding: 5px;
+}
+
+.input-wrapper{
+  padding: 10px;
+}
+
+.contact-form-wrapper{
+  padding: 35px;
+}
+
+.submit-button{
+  padding: 10px;
+}
+
+.submit{
+  padding: 10px;
+  background-color: #fa9107;
+  border: none;
+  color: white;
+}
